@@ -1,0 +1,117 @@
+body {
+  background-color: lightblue;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  justify-content: center;
+  font-size: .8em;
+}
+
+img {
+  border-radius: 7px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #069;
+}
+
+header li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+h1 {
+  color: black;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  text-align: justify;
+  background-color: white;
+  color: black;
+  width: 400px;
+  height: auto;
+}
+
+table {
+  background-color: grey;
+  border-radius: 7px;
+  border: 3px solid lightblue;
+  padding: 3px;
+}
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.main-list li {
+  color: white;
+  background-color: black;
+  margin: 0 auto;
+  padding: 17px;
+  width: 15%;
+  height: 100%;
+  border: 3px solid lightblue;
+  border-radius: 25px;
+  opacity: 0.9;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.container {
+  background-color: white;
+  text-align: left;
+  width: 20%;
+  height: auto;
+  padding: 8px;
+  margin: 0 auto;
+  border: 3px solid white;
+  border-radius: 7px;
+  clear: both;
+}
+
+.container input {
+  display: block;
+  width: 95%;
+  clear: both;
+  background-color: pink;
+  margin: 0 auto; 
+  padding: 9px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.foot p {
+  justify-content: center;
+}
+
+textarea {
+  background-color: pink;
+  display: block;
+  border: 3px solid pink;
+  border-radius: 5px;
+  width: 350px;
+  height: 150px;
+  margin: 0 auto;
+  outline: none;
+  resize: none;
+  }
+
