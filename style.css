@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: lightblue;
   text-align: center;
@@ -11,63 +15,72 @@ img {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* position: fixed; */
   width: 100%;
-  background: #069;
+  border-radius: 12px;
+  background-color: #4c6a99;
+  border: solid 1px #707070;
+  margin: 0 auto;
 }
 
-header li {
+nav {
   display: inline-block;
-  margin: 0 10px;
+  margin: 10px;
+}
+
+a {
+text-decoration: none;
 }
 
 header a {
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-}
-
-h1 {
-  color: black;
-}
-
-h2, h3 {
-  text-align: center;
+  border-right: 5px solid;
+  border-radius: 2px;
+  padding: 3px;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 p {
   margin: 0 auto;
-  text-align: justify;
+  text-align: center;
   background-color: white;
-  color: black;
-  width: 400px;
-  height: auto;
+  width: 300px;
+}
+
+.mainp {
+  text-align: justify;
+  line-height: 25px;
+  width: 450px;
 }
 
 table {
-  background-color: grey;
+  background-color: #4c6a99;
+  width: 400px;
   border-radius: 7px;
   border: 3px solid lightblue;
   padding: 3px;
 }
 
-
 .uppercase {
   text-transform: uppercase;
+}
+
+#wcontent ul, ol {
+  background-color: #4c6a99;
+  border-radius: 6px;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .main-list li {
   color: white;
   background-color: black;
   margin: 0 auto;
-  padding: 17px;
-  width: 15%;
-  height: 100%;
+  padding: 15px;
+  width: 50%;
   border: 3px solid lightblue;
-  border-radius: 25px;
-  opacity: 0.9;
+  border-radius: 10px;
+  opacity: 0.8;
 }
 
 button {
@@ -91,27 +104,27 @@ button {
 .container input {
   display: block;
   width: 95%;
-  clear: both;
-  background-color: pink;
-  margin: 0 auto; 
+  background-color: #a1bdea;
+  margin: 0 auto;
   padding: 9px;
   border-radius: 7px;
-  outline: none;
 }
 
-.foot p {
-  justify-content: center;
+#submit {
+  font-family: 'Roboto Mono', monospace;
+  width: auto;
+  text-transform: uppercase;
 }
 
 textarea {
-  background-color: pink;
+  background-color: #a1bdea;
   display: block;
-  border: 3px solid pink;
+  border: 3px solid lightblue;
   border-radius: 5px;
-  width: 350px;
+  width: 95%;
   height: 150px;
   margin: 0 auto;
+  padding: inherit;
   outline: none;
   resize: none;
   }
-
