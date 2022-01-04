@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Contact</title>
-	<link href="formstyle.css" type="text/css" rel="stylesheet">
-	<script src="Ju.js"></script>
+    <meta charset="UTF-8">
+    <title>Contact Us!</title>
+    <link href="formstyle.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/hack-subset.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+    <script src="Ju.js"></script>
 </head>
+
 <body>
     <form>
         <fieldset>
@@ -23,22 +27,22 @@
                 </select>
             </div>
             <div>
-                <p>Where are you from?</p>
+                <p>Delivery Destination</p>
             </div>
             <div class="radio-input">
                 <div>
-                    <input type="radio" name= "city" value="America"><span>America</span>
+                    <input type="radio" name="city" value="America"><span>America</span>
                 </div>
                 <div>
-                    <input type="radio" name= "city" value="Europe"><span>Europe</span>
+                    <input type="radio" name="city" value="Europe"><span>Europe</span>
                 </div>
                 <div>
-                    <input type="radio" name= "city" value="Other"><span>Other</span>
+                    <input type="radio" name="city" value="Other"><span>Other</span>
                 </div>
             </div>
 
             <div>
-                <p>Mark the foods you like:</p>
+                <p>Menu</p>
             </div>
             <div class="radio-input">
                 <div>
@@ -54,12 +58,18 @@
                     <label for="check3"></label><span>Steak and Salad</span>
                 </div>
                 <div>
-                    <input id="check4" type="checkbox" name="food[]" value="">
-                    <label for="check4"></label><span>Bread w/ Sausage</span>
+                    <input id="check4" type="checkbox" name="food[]" value="Salmon">
+                    <label for="check4"></label><span>Baked Salmon</span>
+                </div>
+                <div>
+                    <input id="check5" type="checkbox" name="food[]" value="VegPie">
+                    <label for="check5"></label><span>Vegetables Pie with Cream Cheese</span>
                 </div>
             </div>
 
-            <div><p>Observations:</p></div>
+            <div>
+                <p>Observations:</p>
+            </div>
             <div>
                 <textarea name="obs" placeholder="Type here!"></textarea><br>
                 <input type="file" name="file" id="file" />
@@ -67,6 +77,7 @@
                 <input type="submit" name="Submit" value="Submit all info">
             </div>
         </fieldset>
-        </form>
+    </form>
 </body>
+
 </html>
