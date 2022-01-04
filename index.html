@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us!</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/hack-subset.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+    <script src="Ju.js"></script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Contact Form</legend>
+            <input type="text" name="name" placeholder="Name here">
+            <input type="email" name="email" placeholder="Email here">
+            <div>
+                <select name="lista">
+                    <option disabled selected>How old are you?</option>
+                    <option value="-18">>18</option>
+                    <option value="18-25">18-25</option>
+                    <option value="25-32">25-32</option>
+                    <option value="32+">32+</option>
+                </select>
+            </div>
+            <div>
+                <p>Delivery Destination</p>
+            </div>
+            <div class="radio-input">
+                <div>
+                    <input type="radio" name="city" value="America"><span>America</span>
+                </div>
+                <div>
+                    <input type="radio" name="city" value="Europe"><span>Europe</span>
+                </div>
+                <div>
+                    <input type="radio" name="city" value="Other"><span>Other</span>
+                </div>
+            </div>
+
+            <div>
+                <p>Menu</p>
+            </div>
+            <div class="radio-input">
+                <div>
+                    <input id="check1" type="checkbox" name="food[]" value="Spaghetti">
+                    <label for="check1"></label><span>Spaghetti a Pomodoro</span>
+                </div>
+                <div>
+                    <input id="check2" type="checkbox" name="food[]" value="eggsbacon">
+                    <label for="check2"></label><span>Eggs and Bacon</span>
+                </div>
+                <div>
+                    <input id="check3" type="checkbox" name="food[]" value="Steak">
+                    <label for="check3"></label><span>Steak and Salad</span>
+                </div>
+                <div>
+                    <input id="check4" type="checkbox" name="food[]" value="Salmon">
+                    <label for="check4"></label><span>Baked Salmon</span>
+                </div>
+                <div>
+                    <input id="check5" type="checkbox" name="food[]" value="VegPie">
+                    <label for="check5"></label><span>Vegetables Pie with Cream Cheese</span>
+                </div>
+            </div>
+
+            <div>
+                <p>Observations:</p>
+            </div>
+            <div>
+                <textarea name="obs" placeholder="Type here!"></textarea><br>
+                <input type="file" name="file" id="file" />
+                <label for="file">Submit file</label>
+                <input type="submit" name="Submit" value="Submit all info">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

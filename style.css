@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+  background-color: #f1e1cd;
+}
+
+form * {
+  /* asterisco pega todos os elementos dentro do coiso */
+  font-family: "Roboto Mono", monospace;
+}
+
+::selection {
+  color: white;
+  background-color: #ffb7b7;
+}
+
+form {
+  font-size: 0.9em;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label[for="file"] {
+  display: block;
+  margin: 5px auto;
+  border-radius: 4px;
+  border: 1px solid #deb887;
+  background-color: #000;
+  color: #ddd;
+  width: 150px;
+  height: 50px;
+  line-height: 50px; /* alinhar texto de acordo com a altura pra ficar no meio bunitin */
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+label[for="check1"],
+label[for="check2"],
+label[for="check3"],
+label[for="check4"],
+label[for="check5"] {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #deb887;
+  background-color: #000;
+  color: #ddd;
+  width: 20px;
+  height: 20px;
+  text-align: right;
+  cursor: pointer;
+}
+
+label[for="check1"]:hover,
+label[for="check2"]:hover,
+label[for="check3"]:hover,
+label[for="check4"]:hover,
+label[for="check5"]:hover {
+  background-color: rgb(255, 217, 0);
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: darkorange;
+}
+
+label[for="file"]:hover {
+  cursor: pointer;
+  background-color: darkorange;
+}
+
+legend {
+  font-size: 15px;
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+  padding: 4px 10px;
+}
+
+form p {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 4px 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+form fieldset {
+  border: 1px solid #ccc;
+  background-color: rgb(224, 184, 131);
+  padding: 0 40px;
+}
+
+form select {
+  /* -webkit-appearance: none; /* -webkit especifica em quais navegadores a propriedade entra em ação, neste caso chrome e safari */
+  /* -moz-appearance: none; /* para o firefox */
+  /* background-image: url(../images/arrow2.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: right; */
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  width: calc(60% + 24px);
+  margin-top: 15px;
+  padding: 12px;
+}
+
+form select option {
+  color: #222034;
+}
+
+form select option[disabled] {
+  color: #ccc;
+}
+
+form textarea {
+  font-family: "Roboto Mono", monospace;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  width: calc(60% + 24px);
+  height: 150px;
+  padding: 0.8rem;
+  outline: none;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #deb887;
+}
+
+form input[type="file"] {
+  display: none;
+}
+
+form input[type="checkbox"] {
+  display: none;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  display: inline-block;
+  margin-top: 20px;
+  width: 60%;
+  padding: 12px;
+}
+
+form input[type="submit"] {
+  font-family: "Roboto Mono", monospace;
+  background-color: #000;
+  width: 150px;
+  height: 50px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  outline: 0;
+  background-color: darkorange;
+  color: #000;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  outline: 0;
+  background-color: #000;
+  color: #ddd;
+}
+
+form select:focus {
+  outline: 0;
+}
+
+.radio-input {
+  display: inline-block;
+  text-align: left;
+}
+
+.radio-input span {
+  margin-left: 10px;
+  color: #222034;
+}
